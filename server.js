@@ -3,6 +3,10 @@ const app = express();
 const path = require("path");
 const axios = require('axios');
 const hbs = require('hbs');
+const dotenv = require('dotenv');
+dotenv.config({ path: './.env' });
+
+const apiKey = process.env.API_KEY
 
 const viewsPath = path.join(__dirname, '/views');
 
@@ -10,6 +14,7 @@ app.set('view engine', 'hbs');
 app.set('views', viewsPath);
 const partialPath = path.join(__dirname, '/views/inc');
 hbs.registerPartials(partialPath);
+
 
 const publicDirectory = path.join(__dirname, '/public');
 app.use(express.static(publicDirectory));
@@ -36,8 +41,8 @@ app.get("/displayWeather", async  (req, res) => {
     }
 
     try {
-      const weatherApi = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&units=metric&appid=ff2084093f4b8a7c1ffc7f6af6e05d9d`)
-      console.log(weatherApi.data)
+      const weatherApi = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&units=metric&appid=${apiKey}`)
+      // console.log(weatherApi.data)
       res.render("displayWeather", {
           city: weatherApi.data.name,
           temp: weatherApi.data.main.temp,
@@ -57,7 +62,7 @@ app.get("/about", (req, res) => {
 app.get("/manchester" , async (req, res) => {
   try {
     const locationApi = await axios.get(`https://api.openweathermap.org/data/2.5/onecall?lat=53.522820&lon=-1.128462&units=metric&appid=weatherKey`)
-    console.log(locationApi.data)
+    // console.log(locationApi.data)
     res.render("manchester", {
         
         description: locationApi.data.current.temp,
