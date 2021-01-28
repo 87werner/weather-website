@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/displayWeather.css">
+    <title>Display of the weather </title>
+</head>
+<body>
+   
+       {{>Nav}}
+    <div class="main-display-container">
+        <div class="city-weather-container">
+            <h4 class="city-weather">{{city}}</h4>
+        </div>
+
+        <div class="weather-placeholder">
+            <img className="weather-pic" class="weather-img-placeholder" src="http://openweathermap.org/img/wn/{{weatherIcon}}@2x.png" alt="weather icon"/>
+            <p id="tempcelcius" class="temp">{{temp}}°c</p><br/>
+            <p>Hover over temp</p>
+            <p class="conditions">{{description}}</p>
+        </div>
+    </div>
+ <script src="/js/main.js"></script>
+</body>
+</html>
+

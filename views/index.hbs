@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <title>Document</title>
+</head>
+<body>
+   
+    {{>Nav}}
+   
+    <div class="home-page-title-container">
+        <h2 class="title-weather">Weather</h2>
+    </div>
+   <div class="main-container">
+        <form class="form-placeholder" action="/displayWeather" method="GET">
+            <input class="input-placeholder " require placeholder="city" type="text" name="citySearch"/> <br>
+            <input class="input-placeholder " require placeholder="country" type="text" name="countrySearch"/><br>
+            <button class="btn-submit" type="submit">Search</button>
+        </form>
+    </div>
+<div class="accessibility">
+    <button class="btn-toggle">Toggle Dark-Mode</button>
+</div>
+
+
+<script src="/js/main.js"></script>
+<script src="/js/darkMode.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    {{>Nav}}
+    <div class="stell-city-page-container">
+        <h1 class="stell-city-page-title">Steel city</h1>
+    </div>
+
+    <div class="mini-title-container">
+        <h3 class="mini-steel-city-title">Steel City 7 day temp</h3>
+    </div>
+        <p>Temperature today is: {{description}}°c</p>
+    <ul class="temp-list-ul">
+        {{#each dailyTemp}}
+            <li class="temp-list-li">Daily average temp {{this.temp.day}}°c</li>
+        {{/each}}
+    <img className="weather" src="http://openweathermap.org/img/wn/{{weatherSheffIcon}}@2x.png" alt="weather icon"/>
+    </ul>
+   
+   
+</body>
+</html>
+
+
+      

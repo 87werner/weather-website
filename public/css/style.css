@@ -1,0 +1,259 @@
+/* body{
+   
+    background-color: #70717285;
+} */
+
+/* <----- Nav-bar -----> */
+.Nav-bar-container{
+    background-color: rgb(81, 218, 236);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.Nav-bar li{
+    list-style: none;
+    display: inline;
+    float: right;
+    margin: 25px 45px 5px 0px;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(255, 255, 255);
+}
+.li{
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+
+#main-app-name{
+    padding-left: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(255, 255, 255, 0.856);
+}
+
+
+@media only screen and (max-width: 500px) {
+   
+    .Nav-bar-container{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+
+    }
+    #main-app-name{
+        flex-grow: 100%;
+        width: 100%;
+    }
+    .Nav-bar li{
+        margin: 0;
+        padding: 0;
+       flex-grow: 1;
+       width:33.33%;
+       justify-content: space-evenly;
+       flex-wrap: wrap;
+
+    }
+   
+}
+
+
+/* <----- Index page style -----> */
+
+body {
+    --text-color: #222;
+    --bkg-color: #fff;
+    background-image: url("/views/Images/weather.png");
+  }
+  body.dark-theme {
+    --text-color: #eee;
+    --bkg-color: #121212;
+  }
+
+  .title-weather{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    color: aqua;
+}
+  .home-page-title-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.main-container{
+    margin: auto;
+    border: 3px solid #69e1e6;
+    padding: 10px;
+    background-color: rgb(179, 245, 245);
+    border-radius: 10px;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.input-placeholder {
+    margin: 5px;
+}
+.accessibility{
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn-toggle,.btn-submit{
+    background-color: #6086ee;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .btn-submit{
+       margin-left: 25px;
+  }
+
+
+  @media (prefers-color-scheme: dark) {
+    /* defaults to dark theme */
+    body {
+      --text-color: #eee;
+      --bkg-color: #121212;
+    }
+    body.light-theme {
+      --text-color: #222;
+      --bkg-color: #fff;
+    }
+  }
+  
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    background: var(--bkg-color);
+  }
+  
+  h1,
+  p {
+    color: var(--text-color);
+  }
+  
+  
+ 
+
+/* <----- display weather -----> */
+
+ /* div{
+    display: flex;
+}
+.main-display-container{
+    margin-top: 18px;
+    margin: auto;
+    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+    background-color: wheat;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.city-weather{
+    text-decoration: underline;
+    font-size: 20px;
+}
+.weather-placeholder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+img{
+  width: 75%;
+  height: 75%;
+
+}
+
+.temp,.conditions{
+   text-align: center;
+    font-size: 40px;
+}
+
+@media only screen and (max-width: 500px) {
+
+} */
+
+
+/* <----- steel city (manchester hbs)-----> */
+/* .stell-city-page-container,.mini-title-container{
+    display: flex;
+    justify-content: center;
+    
+}
+.stell-city-page-title{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: steelblue;
+}
+
+
+.mini-steel-city-title{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: steelblue;
+}
+
+.temp-list-li{
+    list-style: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: steelblue;
+
+} */
+
+
+/* <----- about page style -----> */
+
+/* .about-title-container{
+    display: flex;
+    justify-content: center;
+    font-family: fantasy;
+    font-size: 30px;
+    color: rgb(78, 228, 228);
+    background-image: url("/views/Images/download.jpg");
+}
+
+.safety-title{
+    font-size: 25px;
+    color: rgb(78, 228, 228);
+}
+
+.safety-results-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.dev-team-title{
+    font-size: 25px;
+    color:rgb(78, 228, 228);
+}
+
+.about-paragraph-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-paragraph-one{
+    height: 45px;
+    align-self: center;
+    font-family: sans-serif;
+    color:rgb(78, 228, 228);
+}  */

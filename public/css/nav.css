@@ -1,0 +1,54 @@
+
+
+/* <----- Nav-bar -----> */
+.Nav-bar-container{
+    background-color: rgb(81, 236, 120);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.Nav-bar li{
+    list-style: none;
+    display: inline;
+    float: right;
+    margin: 25px 45px 5px 0px;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(255, 255, 255);
+}
+.li{
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+
+#main-app-name{
+    padding-left: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(255, 255, 255, 0.856);
+}
+
+
+@media only screen and (max-width: 500px) {
+   
+    .Nav-bar-container{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+
+    }
+    #main-app-name{
+        flex-grow: 100%;
+        width: 100%;
+    }
+    .Nav-bar li{
+        margin: 0;
+        padding: 0;
+       flex-grow: 1;
+       width:33.33%;
+       justify-content: space-evenly;
+       flex-wrap: wrap;
+
+    }
+   
+}
