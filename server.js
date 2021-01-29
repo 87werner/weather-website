@@ -61,13 +61,23 @@ app.get("/about", (req, res) => {
 
 app.get("/manchester" , async (req, res) => {
   try {
-    const locationApi = await axios.get(`https://api.openweathermap.org/data/2.5/onecall?lat=53.522820&lon=-1.128462&units=metric&appid=weatherKey`)
-    // console.log(locationApi.data)
+    const locationApi = await axios.get(`https://api.openweathermap.org/data/2.5/onecall?lat=53.522820&lon=-1.128462&units=metric&appid=${apiKey}`)
+    console.log(locationApi.data.daily[0].temp.day)
+
     res.render("manchester", {
         
         description: locationApi.data.current.temp,
         dailyTemp: locationApi.data.daily,
-        // weatherSheffIcon: locationApi.data.daily.weather[0].icon
+        iconOne: locationApi.data.daily[0].weather[0].icon,
+        iconTwo:locationApi.data.daily[1].weather[0].icon,
+        iconThree:locationApi.data.daily[2].weather[0].icon,
+        iconFour:locationApi.data.daily[3].weather[0].icon,
+        iconFive:locationApi.data.daily[4].weather[0].icon,
+        iconSix:locationApi.data.daily[5].weather[0].icon,
+        iconSeven:locationApi.data.daily[6].weather[0].icon,
+        iconEight:locationApi.data.daily[6].weather[0].icon,
+       
+
 
     })
   } catch (error) {
