@@ -1,24 +1,20 @@
-
+body{
+   
+}
 /* <----- steel city (manchester hbs)-----> */
-.stell-city-page-container,.mini-title-container{
-    display: flex;
-    justify-content: center;
+
+.steel-city-page-title,.mini-steel-city-title{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: steelblue;
+}
+.average-daily-temp{
     
+    display: flex;
+    flex-direction: row;
 }
-.stell-city-page-title{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: steelblue;
-}
-
-
-.mini-steel-city-title{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: steelblue;
+.daily-container{
+    width: 50px;
+    display: inline-flex;
 }
 
-.temp-list-li{
-    list-style: none;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: steelblue;
 
-}

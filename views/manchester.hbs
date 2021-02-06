@@ -4,36 +4,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/manchester.css">
     <title>Document</title>
 </head>
 
 <body>
     {{>Nav}}
-    <div class="stell-city-page-container">
-        <h1 class="stell-city-page-title">Steel city</h1>
+    <div class="steel-city-page-container">
+        <h1 class="steel-city-page-title">Steel city</h1>
     </div>
 
-    <div class="mini-title-container">
 
-    </div>
-    <p>Temperature today is: {{description}}°c</p>
+
 
     <h3 class="mini-steel-city-title">Steel City next 8 days of weather</h3>
+    <div className="average-daily-temp">
 
-    <ul class="temp-list-ul">
-        {{#each dailyTemp}}
-        <li class="temp-list-li">Daily average temperature {{this.temp.day}}°c </li>
-        {{/each}}
-        <img className="weather" src="http://openweathermap.org/img/wn/{{iconOne}}@2x.png" alt="weather icon" />
-        <img className="weather" src="http://openweathermap.org/img/wn/{{iconTwo}}@2x.png" alt="weather icon" />
-             <img className="weather" src="http://openweathermap.org/img/wn/{{iconThree}}@2x.png" alt="weather icon" />
-                  <img className="weather" src="http://openweathermap.org/img/wn/{{iconFour}}@2x.png" alt="weather icon" />
-                       <img className="weather" src="http://openweathermap.org/img/wn/{{iconFive}}@2x.png" alt="weather icon" />
-                            <img className="weather" src="http://openweathermap.org/img/wn/{{iconSix}}@2x.png" alt="weather icon" />
-                                 <img className="weather" src="http://openweathermap.org/img/wn/{{iconSeven}}@2x.png" alt="weather icon" />
-                                      <img className="weather" src="http://openweathermap.org/img/wn/{{iconEight}}@2x.png" alt="weather icon" />
-    </ul>
+        <div className="daily-container">
+            <h5>{{dates0}} </h5>
+            <h4> The daily average temp is: {{dailyTemp0}}°c</h4>
+            <img className="weather" src="http://openweathermap.org/img/wn/{{iconOne}}@2x.png" alt="weather icon" />
+        </div>
+        <div>
+            <h5>{{dates1}} </h5>
+            <h4> The daily average temp is: {{dailyTemp1}}°c</h4>
+            <img className="weather" src="http://openweathermap.org/img/wn/{{iconTwo}}@2x.png" alt="weather icon" />
+        </div>
+        <div>
+            <h5>{{dates2}} </h5>
+            <h4> The daily average temp is: {{dailyTemp2}}°c</h4>
+            <img className="weather" src="http://openweathermap.org/img/wn/{{iconThree}}@2x.png" alt="weather icon" />
+        </div>
+        <div>
+            <h5>{{dates3}} </h5>
+            <h4> The daily average temp is: {{dailyTemp3}}°c</h4>
+            <img className="weather" src="http://openweathermap.org/img/wn/{{iconFour}}@2x.png" alt="weather icon" />
+        </div>
+        <div>
+            <h5>{{dates4}} </h5>
+            <h4> The daily average temp is: {{dailyTemp4}}°c</h4>
+            <img className="weather" src="http://openweathermap.org/img/wn/{{iconFive}}@2x.png" alt="weather icon" />
+        </div>
+        <div>
+            <h5>{{dates5}} </h5>
+            <h4> The daily average temp is: {{dailyTemp5}}°c</h4>
+            <img className="weather" src="http://openweathermap.org/img/wn/{{iconSix}}@2x.png" alt="weather icon" />
+        </div>
+        <div>
+            <h5>{{dates6}} </h5>
+            <h4> The daily average temp is: {{dailyTemp6}}°c</h4>
+            <img className="weather" src="http://openweathermap.org/img/wn/{{iconSeven}}@2x.png" alt="weather icon" />
+            <div>
+                <h5>{{dates7}} </h5>
+                <h4> The daily average temp is: {{dailyTemp7}}°c</h4>
+                <img className="weather" src="http://openweathermap.org/img/wn/{{iconEight}}@2x.png"
+                    alt="weather icon" />
+            </div>
+        </div>
+    </div>
 
 
 </body>

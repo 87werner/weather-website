@@ -149,7 +149,7 @@ body {
 
 /* <----- display weather -----> */
 
- /* div{
+ div{
     display: flex;
 }
 .main-display-container{
@@ -193,7 +193,7 @@ img{
 
 
 /* <----- steel city (manchester hbs)-----> */
-/* .stell-city-page-container,.mini-title-container{
+.steel-city-page-container,.mini-title-container{
     display: flex;
     justify-content: center;
     
@@ -202,20 +202,19 @@ img{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: steelblue;
 }
-
-
 .mini-steel-city-title{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: steelblue;
 }
-
 .temp-list-li{
     list-style: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: steelblue;
-
-} */
-
+}
+.weather{
+    width: 75%;
+    height: 75%;
+}
 
 /* <----- about page style -----> */
 
@@ -256,4 +255,4 @@ img{
     align-self: center;
     font-family: sans-serif;
     color:rgb(78, 228, 228);
-}  */
+} 
